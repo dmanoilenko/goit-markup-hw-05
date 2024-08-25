@@ -444,16 +444,17 @@
             <label for="user-com" class="label-text">Comment</label>
             <textarea name="user-comment" id="user-com" placeholder="Text input" class="modal-textarea"></textarea>
           </div>
-         <div class="checkbox-container">
-          <input type="checkbox" id="modal-checkbox" name="accept-policy" class="modal-input-checkbox">
-          <label for="modal-checkbox" class="modal-label-checkbox">
-            <span>
-              <svg width="10" height="8" class="icon-accept">
-                <use href="./images/icons.svg#icon-checkbox"></use>
-              </svg>
-            </span>
-            I accept the terms and conditions of the <a href="" class="privacy-policy">Privacy Policy</a></label>
-         </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="modal-checkbox" name="accept-policy" class="modal-input-checkbox visually-hidden">
+            <label for="modal-checkbox" class="modal-label-checkbox">
+              <span class="custom-checkbox">
+                <svg width="10" height="8" class="icon-accept">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the <a href="" class="privacy-policy">Privacy Policy</a></label>
+          </div>
+          <button type="submit" class="modal-send-btn">Send</button>
         </form>
       </div>
      </div>
