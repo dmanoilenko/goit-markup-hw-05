@@ -384,19 +384,22 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form">
-          <div class="footer-form-thumb">
-            <label class="footer-form-label" for="user-email">Subscribe</label>
-            <input type="text" name="user_email" id="user-email" placeholder="E-mail">
-          </div>
-          <button type="submit" class="sub-btn">
-            <span class="btn-text">
-              Subscribe
-            </span>
-            <svg class="icon-send" width="24" height="24">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
+        <div class="footer-subscribe-form">
+          <p class="footer-subscribe">Subscribe</p>
+          <form class="footer-form">
+            <label class="footer-form-label">
+              <input type="email" class="footer-form-input" name="user_email" placeholder="E-mail">
+              <button type="submit" class="sub-btn">
+                Subscribe
+                <svg class="icon-send" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </label>
+          </form>
+          
+          
+          
         </div>
       </div>
     </footer>
@@ -417,7 +420,7 @@
             <label for="user-name" class="label-text">Name</label>
             <div class="modal-icon-container">
               <input type="text" id="user-name" class="modal-input" name="user-name" required>
-              <svg class="modal-icon" width="18" height="18">
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -441,12 +444,12 @@
             </div>
           </div>
           <div class="textarea-cont">
-            <label for="user-com" class="label-text">Comment</label>
+            <label for="user-comment" class="label-text">Comment</label>
             <textarea name="user-comment" id="user-com" placeholder="Text input" class="modal-textarea"></textarea>
           </div>
           <div class="checkbox-container">
-            <input type="checkbox" id="modal-checkbox" name="accept-policy" class="modal-input-checkbox visually-hidden">
-            <label for="modal-checkbox" class="modal-label-checkbox">
+            <input type="checkbox" value="true" id="user-privacy" name="user-privacy" class="modal-input-checkbox visually-hidden">
+            <label for="user-privacy" class="modal-label-checkbox">
               <span class="custom-checkbox">
                 <svg width="10" height="8" class="icon-accept">
                   <use href="./images/icons.svg#icon-checkbox"></use>
@@ -454,7 +457,7 @@
               </span>
               I accept the terms and conditions of the <a href="" class="privacy-policy">Privacy Policy</a></label>
           </div>
-          <button type="submit" class="modal-send-btn">Send</button>
+          <button type="submit" class="modal-send-btn button">Send</button>
         </form>
       </div>
      </div>
